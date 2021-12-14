@@ -4,6 +4,7 @@
         "path":"string",
         "name":"string",
         "lastModified":"string",
-        "attachmentUrl":"string"
+        "attachmentUrl":"string",
+        "size":"numeric"
     }
 }
