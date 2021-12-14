@@ -10,6 +10,11 @@
       "type": "string",
       "required": true,
       "title": "Path"
+    },
+    "attachmentUrl": {
+      "type": "string",
+      "required": true,
+      "title": "Path"
     }
   }
 }
