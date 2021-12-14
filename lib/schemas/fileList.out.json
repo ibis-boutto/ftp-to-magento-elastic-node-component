@@ -3,6 +3,7 @@
     "properties": {
         "path":"string",
         "name":"string",
-        "lastModified":"string"
+        "lastModified":"string",
+        "attachmentUrl":"string"
     }
 }
