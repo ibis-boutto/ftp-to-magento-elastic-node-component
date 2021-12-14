@@ -1,0 +1,10 @@
+{
+    "type":"object",
+    "properties": {
+        "originalName":"string",
+        "name":"string",
+        "mimeType":"string",
+        "sku":"string",
+        "content": "string"
+    }
+}

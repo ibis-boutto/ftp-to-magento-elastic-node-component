@@ -1,0 +1,24 @@
+## 1.0.4 (November 26, 2021)
+
+* Upgrade sailor version to 2.6.26
+* Reduced the size of component icon file
+
+## 1.0.3 (May 28, 2021)
+
+* Make statuses case-insensitive
+* Update to sailor version 2.6.24
+* Update README documentation
+* Changed petstore password in component.json
+
+## 1.0.2 (January 4, 2021)
+
+* Update to sailor version 2.6.21
+* Update to version 14 of node
+
+## 1.0.1 (December 26, 2019)
+
+* Update sailor version to 2.5.4
+
+## 1.0.0 (November 15, 2019)
+
+* Initial release

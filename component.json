@@ -1,0 +1,65 @@
+{
+  "title": "FTP (ImageSync)",
+  "description": "This component pulls images from an FTP server (New and Updated), and returns a JSON that can be used to set a product image in Magento.",
+  "docsUrl": "https://github.com/elasticio/petstore-component-nodejs",
+  "buildType":"docker",
+  "version": "1.0.0",
+  "credentials": {
+    "fields": {
+      "host": {
+        "label": "FTP Host",
+        "required": true,
+        "viewClass": "TextFieldView",
+        "note": "FTP Server domain"
+      },
+      "user": {
+        "label": "Username",
+        "required": true,
+        "viewClass": "TextFieldView",
+        "note": "This token can be obtained in the the Magento Store Admin Panel. It will be sent"
+      },
+      "pass": {
+        "label": "Password",
+        "required": true,
+        "viewClass": "PasswordFieldView",
+        "note": "This token can be obtained in the the Magento Store Admin Panel. It will be sent"
+      }
+    }
+  },
+  "triggers": {
+    "fetchFileList": {
+      "main": "./lib/triggers/fetchFileList.js",
+      "type": "polling",
+      "title": "Fetch file list from path",
+      "help": {
+        "description": "Returns a JSON list of the current files in the FTP path.",
+        "link": "/components/petstore-nodejs"
+      },
+      "fields": {
+        "path": {
+          "label": "Path",
+          "required": true,
+          "viewClass": "TextFieldView",
+          "note": "FTP Path to scan for new and updated files."
+        }
+      },
+      "metadata": {
+        "out": "./lib/schemas/fileList.out.json"
+      }
+    }
+  },
+  "actions": {
+    "getFileContent": {
+      "main": "./lib/actions/getFileContent.js",
+      "title": "Get file content",
+      "help": {
+        "description": "Gets the content of a file",
+        "link": "/components/petstore-nodejs"
+      },
+      "metadata": {
+        "in": "./lib/schemas/fileContent.in.json",
+        "out": "./lib/schemas/fileContent.out.json"
+      }
+    }
+  }
+}
