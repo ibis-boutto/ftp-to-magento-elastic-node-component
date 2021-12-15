@@ -41,6 +41,18 @@
           "required": true,
           "viewClass": "TextFieldView",
           "note": "FTP Path to scan for new and updated files."
+        },     
+        "autoClearSnapshot": {
+          "label": "Auto clear Snapshot",
+          "required": true,
+          "viewClass": "CheckBoxView",
+          "note": "Automatically clears the snapshot when enabled."
+        },
+        "autoClearSnapshotInterval": {
+          "label": "Auto clear Snapshot Interval",
+          "required": true,
+          "viewClass": "TextFieldView",
+          "note": "Automatically clears the snapshot after N flow executions."
         }
       },
       "metadata": {
