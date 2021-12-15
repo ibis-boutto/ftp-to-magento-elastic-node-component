@@ -72,6 +72,18 @@
         "in": "./lib/schemas/fileContent.in.json",
         "out": "./lib/schemas/fileContent.out.json"
       }
+    },      
+    "moveFile": {
+      "main": "./lib/actions/moveFile.js",
+      "title": "Move file",
+      "help": {
+        "description": "Moves a file from one FTP Directory into another",
+        "link": "/components/petstore-nodejs"
+      },
+      "metadata": {
+        "in": "./lib/schemas/fileMove.in.json",
+        "out": "./lib/schemas/fileMove.out.json"
+      }
     }
   }
 }
