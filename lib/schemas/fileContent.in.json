@@ -14,12 +14,7 @@
     "attachmentUrl": {
       "type": "string",
       "required": true,
-      "title": "Path"
-    },
-    "size": {
-      "type": "numeric",
-      "required": true,
-      "title": "Size"
+      "title": "Atachment URL"
     }
   }
 }
