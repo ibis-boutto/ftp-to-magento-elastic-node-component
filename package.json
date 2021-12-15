@@ -12,7 +12,7 @@
     "author": "Scandiweb",
     "license": "BSD-2-Clause",
     "engines": {
-        "node": "12"
+        "node": "10"
     },
     "dependencies": {
         "@elastic.io/component-commons-library": "1.1.5",
