@@ -6,15 +6,10 @@
       "required": true,
       "title": "Name"
     },
-    "path": {
-      "type": "string",
-      "required": true,
-      "title": "Path"
-    },
     "attachmentUrl": {
       "type": "string",
       "required": true,
-      "title": "Atachment URL"
+      "title": "Attachment URL"
     }
   }
 }
