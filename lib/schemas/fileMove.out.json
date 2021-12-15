@@ -1,25 +1,20 @@
 {
   "type": "object",
   "properties": {
-    "name": {
+    "source": {
       "type": "string",
       "required": true,
-      "title": "Name"
+      "title": "Source"
     },
-    "path": {
+    "target": {
       "type": "string",
       "required": true,
-      "title": "Path"
+      "title": "Target"
     },
-    "attachmentUrl": {
+    "status": {
       "type": "string",
       "required": true,
-      "title": "Path"
-    },
-    "size": {
-      "type": "numeric",
-      "required": true,
-      "title": "Size"
+      "title": "Status"
     }
   }
 }

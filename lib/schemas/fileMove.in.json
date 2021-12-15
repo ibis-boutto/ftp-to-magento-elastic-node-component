@@ -1,25 +1,25 @@
 {
   "type": "object",
   "properties": {
-    "name": {
+    "sourcePath": {
       "type": "string",
       "required": true,
-      "title": "Name"
+      "title": "Source directory"
     },
-    "path": {
+    "fileName": {
       "type": "string",
       "required": true,
-      "title": "Path"
+      "title": "Source file name"
     },
-    "attachmentUrl": {
+    "targetPath": {
       "type": "string",
       "required": true,
-      "title": "Path"
+      "title": "Target directory"
     },
-    "size": {
-      "type": "numeric",
+    "newFileName": {
+      "type": "string",
       "required": true,
-      "title": "Size"
+      "title": "New file name"
     }
   }
 }
